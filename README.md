@@ -39,26 +39,17 @@ Tu peux aussi changer le barème dans `SCORING` en haut de `data.js`.
 
 Pour publier une mise à jour : édite `data.js`, puis `git commit` + `git push`. La page se met à jour.
 
-## 🌙 Mise à jour automatique (GitHub Actions, chaque nuit)
+## 🌙 Mise à jour automatique (routine Claude Code, chaque jour)
 
 Le site est **100 % statique** : aucun appel réseau au chargement, les données viennent
-uniquement de `data.js`. C'est une **GitHub Action** qui fait le travail côté serveur :
+uniquement de `data.js`. La mise à jour est faite par une **routine Claude Code quotidienne**
+qui, chaque jour :
 
-- `.github/workflows/update-results.yml` — cron à **03:00 UTC** (+ bouton manuel).
-- `scripts/update-results.mjs` — récupère les résultats, recalcule le `stage` de chaque
-  équipe, met à jour `LAST_UPDATED`, puis `commit` + `push`. Pas de dépendance (Node 20).
+1. va chercher sur le web les derniers résultats de la Coupe du Monde 2026 ;
+2. détermine pour chaque équipe le tour le plus loin atteint
+   (`group · r32 · r16 · qf · sf · final · champion`) ;
+3. met à jour le `stage` de chaque équipe dans `data.js` + `LAST_UPDATED` ;
+4. fait `commit` + `push`.
 
 GitHub Pages se redéploie automatiquement après le push → classement à jour le matin.
-
-### ⚙️ Activation (une seule fois)
-
-1. Crée un compte gratuit sur **https://www.football-data.org/client/register**
-   et récupère ton token API.
-2. Dans le repo GitHub : **Settings → Secrets and variables → Actions → New repository secret**
-   - Nom : `FOOTBALL_DATA_TOKEN`
-   - Valeur : ton token.
-3. Onglet **Actions** → workflow « Mise à jour nocturne » → **Run workflow** pour tester.
-
-> Les équipes hors du Mondial (ou non trouvées dans l'API) gardent leur `stage` actuel
-> (`group`, 0 pt) — c'est volontaire. La correspondance des noms FR → API est dans
-> `NAME_MAP` (en haut de `scripts/update-results.mjs`) : vérifie-la quand l'API 2026 est live.
+Avantage : pas de clé API, et même les équipes hors Mondial sont gérées correctement.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiñela — Coupe du Monde 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <div class="trophy">🏆</div>
+      <h1 class="title">QUIÑELA</h1>
+      <p class="subtitle">COUPE DU MONDE 2026</p>
+      <p class="tagline">Tirez · Assignez · Encouragez · Gagnez — que la meilleure équipe gagne !</p>
+    </header>
+
+    <div class="statusbar">
+      <span id="status">🏆 Classement général</span>
+      <span id="updated"></span>
+    </div>
+
+    <section class="podium" id="podium" aria-label="Podium"></section>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Participant</th>
+            <th>Équipes attribuées</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <p class="foot">
+      Mise à jour : modifie le <code>stage</code> d'une équipe dans <code>data.js</code> et rafraîchis la page.
+      Le classement, les points et le podium se recalculent automatiquement.
+    </p>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

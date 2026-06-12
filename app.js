@@ -7,8 +7,8 @@
   // Ordre des tours, du plus tôt au plus loin.
   const STAGE_ORDER = ["group", "r32", "r16", "qf", "sf", "final", "champion"];
   const STAGE_LABEL = {
-    group: "Groupes", r32: "32es", r16: "8es",
-    qf: "Quarts", sf: "Demies", final: "Finale", champion: "Champion 🏆",
+    group: "Poules", r32: "32èmes", r16: "8èmes",
+    qf: "Quarts", sf: "Demi", final: "Finale", champion: "Champion 🏆",
   };
 
   // Points d'une équipe = barème du tour atteint + bonus victoires/nuls.

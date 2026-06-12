@@ -39,14 +39,26 @@ Tu peux aussi changer le barème dans `SCORING` en haut de `data.js`.
 
 Pour publier une mise à jour : édite `data.js`, puis `git commit` + `git push`. La page se met à jour.
 
-## 🌙 Mise à jour automatique (routine nocturne)
+## 🌙 Mise à jour automatique (GitHub Actions, chaque nuit)
 
-Le site est **100 % statique** : aucun appel réseau au chargement. Les données viennent
-uniquement de `data.js`. Une routine distante (cron / agent) tourne chaque nuit, met à jour
-les `stage` dans `data.js`, renseigne `LAST_UPDATED`, puis fait `commit` + `push` sur GitHub.
+Le site est **100 % statique** : aucun appel réseau au chargement, les données viennent
+uniquement de `data.js`. C'est une **GitHub Action** qui fait le travail côté serveur :
 
-La routine doit produire un `data.js` valide où :
-- chaque équipe a un `stage` parmi `group · r32 · r16 · qf · sf · final · champion` ;
-- `const LAST_UPDATED = "2026-06-13T03:00:00Z";` (date du passage, affichée sur la page).
+- `.github/workflows/update-results.yml` — cron à **03:00 UTC** (+ bouton manuel).
+- `scripts/update-results.mjs` — récupère les résultats, recalcule le `stage` de chaque
+  équipe, met à jour `LAST_UPDATED`, puis `commit` + `push`. Pas de dépendance (Node 20).
 
-GitHub Pages se redéploie automatiquement à chaque push → le classement est à jour le matin.
+GitHub Pages se redéploie automatiquement après le push → classement à jour le matin.
+
+### ⚙️ Activation (une seule fois)
+
+1. Crée un compte gratuit sur **https://www.football-data.org/client/register**
+   et récupère ton token API.
+2. Dans le repo GitHub : **Settings → Secrets and variables → Actions → New repository secret**
+   - Nom : `FOOTBALL_DATA_TOKEN`
+   - Valeur : ton token.
+3. Onglet **Actions** → workflow « Mise à jour nocturne » → **Run workflow** pour tester.
+
+> Les équipes hors du Mondial (ou non trouvées dans l'API) gardent leur `stage` actuel
+> (`group`, 0 pt) — c'est volontaire. La correspondance des noms FR → API est dans
+> `NAME_MAP` (en haut de `scripts/update-results.mjs`) : vérifie-la quand l'API 2026 est live.

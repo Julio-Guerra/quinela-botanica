@@ -110,7 +110,7 @@
     if (LAST_UPDATED) {
       const d = new Date(LAST_UPDATED);
       const txt = isNaN(d) ? LAST_UPDATED : d.toLocaleString("fr-FR");
-      updated.textContent = "Données mises à jour : " + txt;
+      updated.textContent = "mise à jour : " + txt;
     } else {
       updated.textContent = "";
     }

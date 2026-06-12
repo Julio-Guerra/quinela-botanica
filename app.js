@@ -50,25 +50,6 @@
     return rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : rank;
   }
 
-  function renderPodium(rows) {
-    const top = rows.slice(0, 3);
-    const order = [1, 0, 2]; // 2e, 1er, 3e pour l'effet podium
-    const el = document.getElementById("podium");
-    el.innerHTML = order
-      .filter((i) => top[i])
-      .map((i) => {
-        const r = top[i];
-        return `
-          <div class="podium-spot place-${r.rank}">
-            <div class="podium-medal">${medal(r.rank)}</div>
-            <div class="podium-name">${escapeHtml(r.name)}</div>
-            <div class="podium-pts">${r.total} pts</div>
-            <div class="podium-bar"></div>
-          </div>`;
-      })
-      .join("");
-  }
-
   function teamChip(t) {
     const reached = STAGE_ORDER.indexOf(t.stage);
     const cls = reached >= STAGE_ORDER.indexOf("qf") ? "chip-hot"
@@ -103,7 +84,6 @@
 
   function paint(participants) {
     const rows = computeStandings(participants);
-    renderPodium(rows);
     renderTable(rows);
 
     const updated = document.getElementById("updated");

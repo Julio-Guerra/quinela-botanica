@@ -14,7 +14,8 @@
  *     Modifie librement ces valeurs, tout se recalcule.
  * --------------------------------------------------------------------------*/
 const SCORING = {
-  group:     0,   // Éliminée en phase de groupes
+  elim:      0,   // Éliminée en phase de groupes (mathématiquement)
+  group:     0,   // Encore en jeu (phase de groupes en cours)
   r32:       1,   // Atteint les 32es de finale
   r16:       3,   // Atteint les 16es (huitièmes)
   qf:        6,   // Atteint les quarts
@@ -59,7 +60,7 @@ const PARTICIPANTS = [
   ]},
   { name: "Thomas",   surnom: "", teams: [
       { name: "🇩🇪 Allemagne", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇹🇳 Tunisie",   stage: "group", wins: 0, draws: 0 },
+      { name: "🇹🇳 Tunisie",   stage: "elim",  wins: 0, draws: 0 },
       { name: "🇯🇴 Jordanie",  stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Zuhey",    surnom: "", teams: [
@@ -85,7 +86,7 @@ const PARTICIPANTS = [
   { name: "Jenna",    surnom: "", teams: [
       { name: "🇨🇴 Colombie", stage: "r32", wins: 0, draws: 0 },
       { name: "🇮🇷 Iran",     stage: "r32", wins: 0, draws: 0 },
-      { name: "🇭🇹 Haïti",    stage: "group", wins: 0, draws: 0 },
+      { name: "🇭🇹 Haïti",    stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Nicolas",  surnom: "", teams: [
       { name: "🇭🇷 Croatie",     stage: "group", wins: 0, draws: 0 },
@@ -95,7 +96,7 @@ const PARTICIPANTS = [
   { name: "Quentin",  surnom: "", teams: [
       { name: "🇳🇴 Norvège", stage: "r32", wins: 0, draws: 0 },
       { name: "🇩🇿 Algérie", stage: "group", wins: 0, draws: 0 },
-      { name: "🇹🇷 Turquie", stage: "group", wins: 0, draws: 0 },
+      { name: "🇹🇷 Turquie", stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Marine",   surnom: "", teams: [
       { name: "🇨🇦 Canada",          stage: "r32", wins: 0, draws: 0 },

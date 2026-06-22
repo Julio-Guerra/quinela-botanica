@@ -7,7 +7,7 @@
   // Ordre des tours, du plus tôt au plus loin.
   const STAGE_ORDER = ["group", "r32", "r16", "qf", "sf", "final", "champion"];
   const STAGE_LABEL = {
-    group: "Poules", r32: "32èmes", r16: "8èmes",
+    elim: "Poules", group: "Poules", r32: "32èmes", r16: "8èmes",
     qf: "Quarts", sf: "Demi", final: "Finale", champion: "Champion 🏆",
   };
 
@@ -53,8 +53,8 @@
   function teamChip(t) {
     const reached = STAGE_ORDER.indexOf(t.stage);
     const cls = reached >= STAGE_ORDER.indexOf("qf") ? "chip-hot"
-              : reached >= STAGE_ORDER.indexOf("r32") ? "chip-alive"
-              : "chip-out";
+              : t.stage === "elim" ? "chip-out"
+              : "chip-alive";
     return `<span class="chip ${cls}" title="${STAGE_LABEL[t.stage]} • ${t.points} pts">
               ${escapeHtml(t.name)}
               <span class="chip-stage">${STAGE_LABEL[t.stage]}</span>

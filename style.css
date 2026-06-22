@@ -107,9 +107,9 @@ tr.rank-1 { background: linear-gradient(90deg, #f4cf5b14, transparent); }
   border: 1px solid #ffffff1f; background: #ffffff0a;
 }
 .chip-stage { font-size: 10px; opacity: .8; padding-left: 6px; border-left: 1px solid #ffffff22; }
-.chip-out   { color: var(--out); }
+.chip-out   { color: var(--hot);   border-color: #ff5d7355; background: #ff5d7312; }
 .chip-alive { color: var(--alive); border-color: #5bd6a055; background: #5bd6a012; }
-.chip-hot   { color: var(--hot);  border-color: #ff5d7355; background: #ff5d7312; }
+.chip-hot   { color: var(--gold);  border-color: #f4cf5b55; background: #f4cf5b12; }
 
 /* ---------- Footer ---------- */
 .foot { text-align: center; color: var(--muted); font-size: 12px; margin-top: 16px; }

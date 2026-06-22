@@ -37,8 +37,8 @@
 
     // Rang avec ex-aequo (même total = même rang).
     let lastTotal = null, lastRank = 0;
-    rows.forEach((r, i) => {
-      if (r.total !== lastTotal) { lastRank = i + 1; lastTotal = r.total; }
+    rows.forEach((r) => {
+      if (r.total !== lastTotal) { lastRank++; lastTotal = r.total; }
       r.rank = lastRank;
     });
     return rows;

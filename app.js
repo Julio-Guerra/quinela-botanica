@@ -7,7 +7,7 @@
   // Ordre des tours, du plus tôt au plus loin.
   const STAGE_ORDER = ["group", "r32", "r16", "qf", "sf", "final", "champion"];
   const STAGE_LABEL = {
-    elim: "Poules", group: "Poules", r32: "32èmes", r16: "8èmes",
+    elim: "Poules", group: "Poules", r32: "16èmes", r16: "8èmes",
     qf: "Quarts", sf: "Demi", final: "Finale", champion: "Champion 🏆",
   };
 

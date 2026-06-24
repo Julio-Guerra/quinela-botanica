@@ -51,22 +51,22 @@ const PARTICIPANTS = [
   { name: "Julio",    surnom: "", teams: [
       { name: "🇧🇷 Brésil",  stage: "r32", wins: 0, draws: 0 },
       { name: "🇨🇭 Suisse",  stage: "r32", wins: 0, draws: 0 },
-      { name: "🇮🇶 Irak",    stage: "group", wins: 0, draws: 0 },
+      { name: "🇮🇶 Irak",    stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Élodie",   surnom: "", teams: [
       { name: "🇪🇸 Espagne", stage: "r32", wins: 0, draws: 0 },
       { name: "🇲🇦 Maroc",   stage: "r32", wins: 0, draws: 0 },
-      { name: "🇵🇦 Panama",  stage: "group", wins: 0, draws: 0 },
+      { name: "🇵🇦 Panama",  stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Thomas",   surnom: "", teams: [
       { name: "🇩🇪 Allemagne", stage: "r32", wins: 0, draws: 0 },
       { name: "🇹🇳 Tunisie",   stage: "elim",  wins: 0, draws: 0 },
-      { name: "🇯🇴 Jordanie",  stage: "group", wins: 0, draws: 0 },
+      { name: "🇯🇴 Jordanie",  stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Zuhey",    surnom: "", teams: [
       { name: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre", stage: "r32", wins: 0, draws: 0 },
       { name: "🇪🇨 Équateur",   stage: "group", wins: 0, draws: 0 },
-      { name: "🇶🇦 Qatar",      stage: "group", wins: 0, draws: 0 },
+      { name: "🇶🇦 Qatar",      stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Elaine",   surnom: "", teams: [
       { name: "🇵🇹 Portugal",       stage: "group", wins: 0, draws: 0 },
@@ -80,7 +80,7 @@ const PARTICIPANTS = [
   ]},
   { name: "Titziana", surnom: "", teams: [
       { name: "🇧🇪 Belgique", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇸🇳 Sénégal",  stage: "group", wins: 0, draws: 0 },
+      { name: "🇸🇳 Sénégal",  stage: "elim",  wins: 0, draws: 0 },
       { name: "🇨🇼 Curaçao",  stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Jenna",    surnom: "", teams: [
@@ -91,7 +91,7 @@ const PARTICIPANTS = [
   { name: "Nicolas",  surnom: "", teams: [
       { name: "🇭🇷 Croatie",     stage: "group", wins: 0, draws: 0 },
       { name: "🇪🇬 Égypte",      stage: "group", wins: 0, draws: 0 },
-      { name: "🇺🇿 Ouzbékistan", stage: "group", wins: 0, draws: 0 },
+      { name: "🇺🇿 Ouzbékistan", stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Quentin",  surnom: "", teams: [
       { name: "🇳🇴 Norvège", stage: "r32", wins: 0, draws: 0 },
@@ -101,7 +101,7 @@ const PARTICIPANTS = [
   { name: "Marine",   surnom: "", teams: [
       { name: "🇨🇦 Canada",          stage: "r32", wins: 0, draws: 0 },
       { name: "🇸🇦 Arabie saoudite", stage: "group", wins: 0, draws: 0 },
-      { name: "🇨🇬 Congo",           stage: "r32", wins: 0, draws: 0 },
+      { name: "🇨🇬 Congo",           stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Amele",    surnom: "", teams: [
       { name: "🇺🇸 États-Unis", stage: "r32", wins: 0, draws: 0 },
@@ -110,7 +110,7 @@ const PARTICIPANTS = [
   ]},
   { name: "David",    surnom: "", teams: [
       { name: "🇲🇽 Mexique",  stage: "r32", wins: 0, draws: 0 },
-      { name: "🇦🇹 Autriche", stage: "r32", wins: 0, draws: 0 },
+      { name: "🇦🇹 Autriche", stage: "group", wins: 0, draws: 0 },
       { name: "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse",   stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Sandra",   surnom: "", teams: [
@@ -119,7 +119,7 @@ const PARTICIPANTS = [
       { name: "🇸🇪 Suède",         stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Julien",   surnom: "", teams: [
-      { name: "🇺🇾 Uruguay",            stage: "r32", wins: 0, draws: 0 },
+      { name: "🇺🇾 Uruguay",            stage: "group", wins: 0, draws: 0 },
       { name: "🇿🇦 Afrique du Sud",     stage: "group", wins: 0, draws: 0 },
       { name: "🇨🇿 République tchèque", stage: "group", wins: 0, draws: 0 },
   ]},
@@ -131,7 +131,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-06-22T00:00:00Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-06-24T00:00:00Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

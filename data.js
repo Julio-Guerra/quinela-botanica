@@ -115,13 +115,13 @@ const PARTICIPANTS = [
   ]},
   { name: "Sandra",   surnom: "", teams: [
       { name: "🇦🇷 Argentine",     stage: "r32", wins: 0, draws: 0 },
-      { name: "🇰🇷 Corée du Sud",  stage: "r32", wins: 0, draws: 0 },
+      { name: "🇰🇷 Corée du Sud",  stage: "group", wins: 0, draws: 0 },
       { name: "🇸🇪 Suède",         stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Julien",   surnom: "", teams: [
       { name: "🇺🇾 Uruguay",            stage: "group", wins: 0, draws: 0 },
-      { name: "🇿🇦 Afrique du Sud",     stage: "group", wins: 0, draws: 0 },
-      { name: "🇨🇿 République tchèque", stage: "group", wins: 0, draws: 0 },
+      { name: "🇿🇦 Afrique du Sud",     stage: "r32",  wins: 0, draws: 0 },
+      { name: "🇨🇿 République tchèque", stage: "elim", wins: 0, draws: 0 },
   ]},
 ];
 
@@ -131,7 +131,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-06-24T00:00:00Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-06-25T00:00:00Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

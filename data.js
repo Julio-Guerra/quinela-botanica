@@ -65,13 +65,13 @@ const PARTICIPANTS = [
   ]},
   { name: "Zuhey",    surnom: "", teams: [
       { name: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇪🇨 Équateur",   stage: "group", wins: 0, draws: 0 },
+      { name: "🇪🇨 Équateur",   stage: "r32",   wins: 0, draws: 0 },
       { name: "🇶🇦 Qatar",      stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Elaine",   surnom: "", teams: [
       { name: "🇵🇹 Portugal",       stage: "group", wins: 0, draws: 0 },
       { name: "🇨🇮 Côte d'Ivoire",  stage: "r32", wins: 0, draws: 0 },
-      { name: "🇧🇦 Bosnie",         stage: "group", wins: 0, draws: 0 },
+      { name: "🇧🇦 Bosnie",         stage: "r32",   wins: 0, draws: 0 },
   ]},
   { name: "Momo",     surnom: "", teams: [
       { name: "🇳🇱 Pays-Bas",           stage: "r32", wins: 0, draws: 0 },
@@ -81,7 +81,7 @@ const PARTICIPANTS = [
   { name: "Titziana", surnom: "", teams: [
       { name: "🇧🇪 Belgique", stage: "r32", wins: 0, draws: 0 },
       { name: "🇸🇳 Sénégal",  stage: "elim",  wins: 0, draws: 0 },
-      { name: "🇨🇼 Curaçao",  stage: "group", wins: 0, draws: 0 },
+      { name: "🇨🇼 Curaçao",  stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Jenna",    surnom: "", teams: [
       { name: "🇨🇴 Colombie", stage: "r32", wins: 0, draws: 0 },
@@ -116,7 +116,7 @@ const PARTICIPANTS = [
   { name: "Sandra",   surnom: "", teams: [
       { name: "🇦🇷 Argentine",     stage: "r32", wins: 0, draws: 0 },
       { name: "🇰🇷 Corée du Sud",  stage: "group", wins: 0, draws: 0 },
-      { name: "🇸🇪 Suède",         stage: "group", wins: 0, draws: 0 },
+      { name: "🇸🇪 Suède",         stage: "r32",   wins: 0, draws: 0 },
   ]},
   { name: "Julien",   surnom: "", teams: [
       { name: "🇺🇾 Uruguay",            stage: "group", wins: 0, draws: 0 },
@@ -131,7 +131,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-06-25T00:00:00Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-06-26T00:00:00Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

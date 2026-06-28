@@ -69,14 +69,14 @@ const PARTICIPANTS = [
       { name: "🇶🇦 Qatar",      stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Elaine",   surnom: "", teams: [
-      { name: "🇵🇹 Portugal",       stage: "group", wins: 0, draws: 0 },
+      { name: "🇵🇹 Portugal",       stage: "r32",   wins: 0, draws: 0 },
       { name: "🇨🇮 Côte d'Ivoire",  stage: "r32", wins: 0, draws: 0 },
       { name: "🇧🇦 Bosnie",         stage: "r32",   wins: 0, draws: 0 },
   ]},
   { name: "Momo",     surnom: "", teams: [
       { name: "🇳🇱 Pays-Bas",           stage: "r32", wins: 0, draws: 0 },
       { name: "🇦🇺 Australie",          stage: "r32", wins: 0, draws: 0 },
-      { name: "🇳🇿 Nouvelle-Zélande",   stage: "group", wins: 0, draws: 0 },
+      { name: "🇳🇿 Nouvelle-Zélande",   stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Titziana", surnom: "", teams: [
       { name: "🇧🇪 Belgique", stage: "r32", wins: 0, draws: 0 },
@@ -85,32 +85,32 @@ const PARTICIPANTS = [
   ]},
   { name: "Jenna",    surnom: "", teams: [
       { name: "🇨🇴 Colombie", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇮🇷 Iran",     stage: "r32", wins: 0, draws: 0 },
+      { name: "🇮🇷 Iran",     stage: "elim", wins: 0, draws: 0 },
       { name: "🇭🇹 Haïti",    stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Nicolas",  surnom: "", teams: [
-      { name: "🇭🇷 Croatie",     stage: "group", wins: 0, draws: 0 },
-      { name: "🇪🇬 Égypte",      stage: "group", wins: 0, draws: 0 },
+      { name: "🇭🇷 Croatie",     stage: "r32",   wins: 0, draws: 0 },
+      { name: "🇪🇬 Égypte",      stage: "r32",   wins: 0, draws: 0 },
       { name: "🇺🇿 Ouzbékistan", stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Quentin",  surnom: "", teams: [
       { name: "🇳🇴 Norvège", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇩🇿 Algérie", stage: "group", wins: 0, draws: 0 },
+      { name: "🇩🇿 Algérie", stage: "r32",   wins: 0, draws: 0 },
       { name: "🇹🇷 Turquie", stage: "elim",  wins: 0, draws: 0 },
   ]},
   { name: "Marine",   surnom: "", teams: [
       { name: "🇨🇦 Canada",          stage: "r32", wins: 0, draws: 0 },
-      { name: "🇸🇦 Arabie saoudite", stage: "group", wins: 0, draws: 0 },
-      { name: "🇨🇬 Congo",           stage: "group", wins: 0, draws: 0 },
+      { name: "🇸🇦 Arabie saoudite", stage: "elim",  wins: 0, draws: 0 },
+      { name: "🇨🇬 Congo",           stage: "r32",   wins: 0, draws: 0 },
   ]},
   { name: "Amele",    surnom: "", teams: [
       { name: "🇺🇸 États-Unis", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇵🇾 Paraguay",   stage: "group", wins: 0, draws: 0 },
-      { name: "🇨🇻 Cap-Vert",   stage: "group", wins: 0, draws: 0 },
+      { name: "🇵🇾 Paraguay",   stage: "r32",   wins: 0, draws: 0 },
+      { name: "🇨🇻 Cap-Vert",   stage: "r32",   wins: 0, draws: 0 },
   ]},
   { name: "David",    surnom: "", teams: [
       { name: "🇲🇽 Mexique",  stage: "r32", wins: 0, draws: 0 },
-      { name: "🇦🇹 Autriche", stage: "group", wins: 0, draws: 0 },
+      { name: "🇦🇹 Autriche", stage: "r32",   wins: 0, draws: 0 },
       { name: "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse",   stage: "group", wins: 0, draws: 0 },
   ]},
   { name: "Sandra",   surnom: "", teams: [
@@ -119,7 +119,7 @@ const PARTICIPANTS = [
       { name: "🇸🇪 Suède",         stage: "r32",   wins: 0, draws: 0 },
   ]},
   { name: "Julien",   surnom: "", teams: [
-      { name: "🇺🇾 Uruguay",            stage: "group", wins: 0, draws: 0 },
+      { name: "🇺🇾 Uruguay",            stage: "elim",  wins: 0, draws: 0 },
       { name: "🇿🇦 Afrique du Sud",     stage: "r32",  wins: 0, draws: 0 },
       { name: "🇨🇿 République tchèque", stage: "elim", wins: 0, draws: 0 },
   ]},
@@ -131,7 +131,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-06-26T05:57:21Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-06-28T05:22:00Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

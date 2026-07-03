@@ -116,7 +116,8 @@ tr.rank-1 { background: linear-gradient(90deg, #f4cf5b14, transparent); }
 .foot code { color: var(--gold); background: #ffffff0d; padding: 1px 6px; border-radius: 6px; }
 
 @media (max-width: 620px) {
-  .chip-stage { display: none; }
+  .chip-stage { font-size: 0; }
+  .chip-stage::after { content: attr(data-short); font-size: 9px; }
   .c-rank { font-size: 16px; }
   .podium-spot { width: 31%; }
 }

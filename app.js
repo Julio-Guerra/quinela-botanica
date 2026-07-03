@@ -10,6 +10,10 @@
     group: "Poules", r32: "16èmes", r16: "8èmes",
     qf: "Quarts", sf: "Demi", final: "Finale", champion: "Champion 🏆",
   };
+  const STAGE_SHORT = {
+    group: "P", r32: "16e", r16: "8e",
+    qf: "q", sf: "d", final: "f", champion: "ch",
+  };
 
   // Points d'une équipe = barème du tour atteint + bonus victoires/nuls.
   function teamPoints(team) {
@@ -56,9 +60,10 @@
               : reached >= STAGE_ORDER.indexOf("qf") ? "chip-hot"
               : "chip-alive";
     const label = STAGE_LABEL[t.stage] + (t.eliminated ? " (sortie)" : "");
+    const short = STAGE_SHORT[t.stage] + (t.eliminated ? " ✗" : "");
     return `<span class="chip ${cls}" title="${label} • ${t.points} pts">
               ${escapeHtml(t.name)}
-              <span class="chip-stage">${label}</span>
+              <span class="chip-stage" data-short="${short}">${label}</span>
             </span>`;
   }
 

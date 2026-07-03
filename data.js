@@ -51,11 +51,11 @@ const PARTICIPANTS = [
   ]},
   { name: "Julio",    surnom: "", teams: [
       { name: "🇧🇷 Brésil",  stage: "r16", wins: 0, draws: 0 },
-      { name: "🇨🇭 Suisse",  stage: "r32", wins: 0, draws: 0 },
+      { name: "🇨🇭 Suisse",  stage: "r16", wins: 0, draws: 0 },
       { name: "🇮🇶 Irak",    stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Élodie",   surnom: "", teams: [
-      { name: "🇪🇸 Espagne", stage: "r32", wins: 0, draws: 0 },
+      { name: "🇪🇸 Espagne", stage: "r16", wins: 0, draws: 0 },
       { name: "🇲🇦 Maroc",   stage: "r16", wins: 0, draws: 0 },
       { name: "🇵🇦 Panama",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -70,9 +70,9 @@ const PARTICIPANTS = [
       { name: "🇶🇦 Qatar",      stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Elaine",   surnom: "", teams: [
-      { name: "🇵🇹 Portugal",       stage: "r32", wins: 0, draws: 0 },
+      { name: "🇵🇹 Portugal",       stage: "r16", wins: 0, draws: 0 },
       { name: "🇨🇮 Côte d'Ivoire",  stage: "r32", wins: 0, draws: 0, eliminated: true },
-      { name: "🇧🇦 Bosnie",         stage: "r32", wins: 0, draws: 0 },
+      { name: "🇧🇦 Bosnie",         stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Momo",     surnom: "", teams: [
       { name: "🇳🇱 Pays-Bas",           stage: "r32", wins: 0, draws: 0, eliminated: true },
@@ -80,8 +80,8 @@ const PARTICIPANTS = [
       { name: "🇳🇿 Nouvelle-Zélande",   stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Titziana", surnom: "", teams: [
-      { name: "🇧🇪 Belgique", stage: "r32", wins: 0, draws: 0 },
-      { name: "🇸🇳 Sénégal",  stage: "r32", wins: 0, draws: 0 },
+      { name: "🇧🇪 Belgique", stage: "r16", wins: 0, draws: 0 },
+      { name: "🇸🇳 Sénégal",  stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇨🇼 Curaçao",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Jenna",    surnom: "", teams: [
@@ -90,13 +90,13 @@ const PARTICIPANTS = [
       { name: "🇭🇹 Haïti",    stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Nicolas",  surnom: "", teams: [
-      { name: "🇭🇷 Croatie",     stage: "r32", wins: 0, draws: 0 },
+      { name: "🇭🇷 Croatie",     stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇪🇬 Égypte",      stage: "r32", wins: 0, draws: 0 },
       { name: "🇺🇿 Ouzbékistan", stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Quentin",  surnom: "", teams: [
       { name: "🇳🇴 Norvège", stage: "r16", wins: 0, draws: 0 },
-      { name: "🇩🇿 Algérie", stage: "r32", wins: 0, draws: 0 },
+      { name: "🇩🇿 Algérie", stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇹🇷 Turquie", stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Marine",   surnom: "", teams: [
@@ -105,13 +105,13 @@ const PARTICIPANTS = [
       { name: "🇨🇬 Congo",           stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Amele",    surnom: "", teams: [
-      { name: "🇺🇸 États-Unis", stage: "r32", wins: 0, draws: 0 },
+      { name: "🇺🇸 États-Unis", stage: "r16", wins: 0, draws: 0 },
       { name: "🇵🇾 Paraguay",   stage: "r16", wins: 0, draws: 0 },
       { name: "🇨🇻 Cap-Vert",   stage: "r32", wins: 0, draws: 0 },
   ]},
   { name: "David",    surnom: "", teams: [
       { name: "🇲🇽 Mexique",  stage: "r16", wins: 0, draws: 0 },
-      { name: "🇦🇹 Autriche", stage: "r32", wins: 0, draws: 0 },
+      { name: "🇦🇹 Autriche", stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse",   stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Sandra",   surnom: "", teams: [
@@ -132,7 +132,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-07-01T20:57:25Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-07-03T20:34:30Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

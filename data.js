@@ -45,18 +45,18 @@ const BONUS = {
  * --------------------------------------------------------------------------*/
 const PARTICIPANTS = [
   { name: "Jess",     surnom: "", teams: [
-      { name: "🇫🇷 France",  stage: "r16", wins: 0, draws: 0 },
-      { name: "🇬🇭 Ghana",   stage: "r32", wins: 0, draws: 0 },
+      { name: "🇫🇷 France",  stage: "qf", wins: 0, draws: 0 },
+      { name: "🇬🇭 Ghana",   stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇯🇵 Japon",   stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Julio",    surnom: "", teams: [
-      { name: "🇧🇷 Brésil",  stage: "r16", wins: 0, draws: 0 },
+      { name: "🇧🇷 Brésil",  stage: "r16", wins: 0, draws: 0, eliminated: true },
       { name: "🇨🇭 Suisse",  stage: "r16", wins: 0, draws: 0 },
       { name: "🇮🇶 Irak",    stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Élodie",   surnom: "", teams: [
       { name: "🇪🇸 Espagne", stage: "r16", wins: 0, draws: 0 },
-      { name: "🇲🇦 Maroc",   stage: "r16", wins: 0, draws: 0 },
+      { name: "🇲🇦 Maroc",   stage: "qf", wins: 0, draws: 0 },
       { name: "🇵🇦 Panama",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Thomas",   surnom: "", teams: [
@@ -65,7 +65,7 @@ const PARTICIPANTS = [
       { name: "🇯🇴 Jordanie",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Zuhey",    surnom: "", teams: [
-      { name: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre", stage: "r16", wins: 0, draws: 0 },
+      { name: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre", stage: "qf", wins: 0, draws: 0 },
       { name: "🇪🇨 Équateur",   stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇶🇦 Qatar",      stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -76,7 +76,7 @@ const PARTICIPANTS = [
   ]},
   { name: "Momo",     surnom: "", teams: [
       { name: "🇳🇱 Pays-Bas",           stage: "r32", wins: 0, draws: 0, eliminated: true },
-      { name: "🇦🇺 Australie",          stage: "r32", wins: 0, draws: 0 },
+      { name: "🇦🇺 Australie",          stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇳🇿 Nouvelle-Zélande",   stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Titziana", surnom: "", teams: [
@@ -85,37 +85,37 @@ const PARTICIPANTS = [
       { name: "🇨🇼 Curaçao",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Jenna",    surnom: "", teams: [
-      { name: "🇨🇴 Colombie", stage: "r32", wins: 0, draws: 0 },
+      { name: "🇨🇴 Colombie", stage: "r16", wins: 0, draws: 0 },
       { name: "🇮🇷 Iran",     stage: "group", wins: 0, draws: 0, eliminated: true },
       { name: "🇭🇹 Haïti",    stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Nicolas",  surnom: "", teams: [
       { name: "🇭🇷 Croatie",     stage: "r32", wins: 0, draws: 0, eliminated: true },
-      { name: "🇪🇬 Égypte",      stage: "r32", wins: 0, draws: 0 },
+      { name: "🇪🇬 Égypte",      stage: "r16", wins: 0, draws: 0 },
       { name: "🇺🇿 Ouzbékistan", stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Quentin",  surnom: "", teams: [
-      { name: "🇳🇴 Norvège", stage: "r16", wins: 0, draws: 0 },
+      { name: "🇳🇴 Norvège", stage: "qf", wins: 0, draws: 0 },
       { name: "🇩🇿 Algérie", stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇹🇷 Turquie", stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Marine",   surnom: "", teams: [
-      { name: "🇨🇦 Canada",          stage: "r16", wins: 0, draws: 0 },
+      { name: "🇨🇦 Canada",          stage: "r16", wins: 0, draws: 0, eliminated: true },
       { name: "🇸🇦 Arabie saoudite", stage: "group", wins: 0, draws: 0, eliminated: true },
       { name: "🇨🇬 Congo",           stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Amele",    surnom: "", teams: [
       { name: "🇺🇸 États-Unis", stage: "r16", wins: 0, draws: 0 },
-      { name: "🇵🇾 Paraguay",   stage: "r16", wins: 0, draws: 0 },
-      { name: "🇨🇻 Cap-Vert",   stage: "r32", wins: 0, draws: 0 },
+      { name: "🇵🇾 Paraguay",   stage: "r16", wins: 0, draws: 0, eliminated: true },
+      { name: "🇨🇻 Cap-Vert",   stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "David",    surnom: "", teams: [
-      { name: "🇲🇽 Mexique",  stage: "r16", wins: 0, draws: 0 },
+      { name: "🇲🇽 Mexique",  stage: "r16", wins: 0, draws: 0, eliminated: true },
       { name: "🇦🇹 Autriche", stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse",   stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Sandra",   surnom: "", teams: [
-      { name: "🇦🇷 Argentine",     stage: "r32", wins: 0, draws: 0 },
+      { name: "🇦🇷 Argentine",     stage: "r16", wins: 0, draws: 0 },
       { name: "🇰🇷 Corée du Sud",  stage: "group", wins: 0, draws: 0, eliminated: true },
       { name: "🇸🇪 Suède",         stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -132,7 +132,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-07-03T20:34:30Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-07-06T17:12:46Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

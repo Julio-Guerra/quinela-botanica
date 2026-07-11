@@ -45,7 +45,7 @@ const BONUS = {
  * --------------------------------------------------------------------------*/
 const PARTICIPANTS = [
   { name: "Jess",     surnom: "", teams: [
-      { name: "🇫🇷 France",  stage: "qf", wins: 0, draws: 0 },
+      { name: "🇫🇷 France",  stage: "sf", wins: 0, draws: 0 },
       { name: "🇬🇭 Ghana",   stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇯🇵 Japon",   stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -55,8 +55,8 @@ const PARTICIPANTS = [
       { name: "🇮🇶 Irak",    stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Élodie",   surnom: "", teams: [
-      { name: "🇪🇸 Espagne", stage: "qf", wins: 0, draws: 0 },
-      { name: "🇲🇦 Maroc",   stage: "qf", wins: 0, draws: 0 },
+      { name: "🇪🇸 Espagne", stage: "sf", wins: 0, draws: 0 },
+      { name: "🇲🇦 Maroc",   stage: "qf", wins: 0, draws: 0, eliminated: true },
       { name: "🇵🇦 Panama",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Thomas",   surnom: "", teams: [
@@ -80,7 +80,7 @@ const PARTICIPANTS = [
       { name: "🇳🇿 Nouvelle-Zélande",   stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Titziana", surnom: "", teams: [
-      { name: "🇧🇪 Belgique", stage: "qf", wins: 0, draws: 0 },
+      { name: "🇧🇪 Belgique", stage: "qf", wins: 0, draws: 0, eliminated: true },
       { name: "🇸🇳 Sénégal",  stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇨🇼 Curaçao",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -132,7 +132,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-07-09T07:25:36Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-07-11T06:42:38Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */

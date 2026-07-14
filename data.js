@@ -51,7 +51,7 @@ const PARTICIPANTS = [
   ]},
   { name: "Julio",    surnom: "", teams: [
       { name: "🇧🇷 Brésil",  stage: "r16", wins: 0, draws: 0, eliminated: true },
-      { name: "🇨🇭 Suisse",  stage: "qf", wins: 0, draws: 0 },
+      { name: "🇨🇭 Suisse",  stage: "qf", wins: 0, draws: 0, eliminated: true },
       { name: "🇮🇶 Irak",    stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Élodie",   surnom: "", teams: [
@@ -65,7 +65,7 @@ const PARTICIPANTS = [
       { name: "🇯🇴 Jordanie",  stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Zuhey",    surnom: "", teams: [
-      { name: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre", stage: "qf", wins: 0, draws: 0 },
+      { name: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre", stage: "sf", wins: 0, draws: 0 },
       { name: "🇪🇨 Équateur",   stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇶🇦 Qatar",      stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -95,7 +95,7 @@ const PARTICIPANTS = [
       { name: "🇺🇿 Ouzbékistan", stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Quentin",  surnom: "", teams: [
-      { name: "🇳🇴 Norvège", stage: "qf", wins: 0, draws: 0 },
+      { name: "🇳🇴 Norvège", stage: "qf", wins: 0, draws: 0, eliminated: true },
       { name: "🇩🇿 Algérie", stage: "r32", wins: 0, draws: 0, eliminated: true },
       { name: "🇹🇷 Turquie", stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -115,7 +115,7 @@ const PARTICIPANTS = [
       { name: "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse",   stage: "group", wins: 0, draws: 0, eliminated: true },
   ]},
   { name: "Sandra",   surnom: "", teams: [
-      { name: "🇦🇷 Argentine",     stage: "qf", wins: 0, draws: 0 },
+      { name: "🇦🇷 Argentine",     stage: "sf", wins: 0, draws: 0 },
       { name: "🇰🇷 Corée du Sud",  stage: "group", wins: 0, draws: 0, eliminated: true },
       { name: "🇸🇪 Suède",         stage: "r32", wins: 0, draws: 0, eliminated: true },
   ]},
@@ -132,7 +132,7 @@ const PARTICIPANTS = [
  *     La routine nocturne réécrit cette valeur à chaque passage.
  *     Format libre, par ex. une date ISO. Laisse null pour masquer.
  * --------------------------------------------------------------------------*/
-const LAST_UPDATED = "2026-07-11T06:42:38Z";   // ex: "2026-06-13T03:00:00Z"
+const LAST_UPDATED = "2026-07-14T17:56:24Z";   // ex: "2026-06-13T03:00:00Z"
 
 
 /* Ne pas toucher : expose les données au reste de l'appli. */
